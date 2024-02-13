@@ -6,12 +6,32 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ExpenseView: View {
     
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var expenses: FetchedResults<Expense>
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                ScrollView(.vertical){
+                    VStack{
+                        HStack{
+                            Text("Welcome")
+                                .font(.title)
+                            Spacer()
+                        }
+                        ForEach(expenses) { expense in
+                            ExpenseDetail(amount: String(expense.amount), data: expense.date!, name: expense.name!, type: expense.type ?? "Transportation")
+                        }
+                    }.scrollIndicators(.hidden)
+                }
+            }
+            .padding()
+            .navigationTitle("Expenses")
+            
+        }
     }
 }
 

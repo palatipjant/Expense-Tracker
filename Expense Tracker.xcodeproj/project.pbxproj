@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648D058E2B7B4F5F00489808 /* ExpenseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D058D2B7B4F5F00489808 /* ExpenseDetail.swift */; };
 		64974CF42B7A89D000B4BEBA /* Expense_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64974CF32B7A89D000B4BEBA /* Expense_TrackerApp.swift */; };
 		64974CF62B7A89D000B4BEBA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64974CF52B7A89D000B4BEBA /* MainView.swift */; };
 		64974CF82B7A89D100B4BEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64974CF72B7A89D100B4BEBA /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		648D058D2B7B4F5F00489808 /* ExpenseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetail.swift; sourceTree = "<group>"; };
 		64974CF02B7A89D000B4BEBA /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64974CF32B7A89D000B4BEBA /* Expense_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_TrackerApp.swift; sourceTree = "<group>"; };
 		64974CF52B7A89D000B4BEBA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		64974D022B7A89E100B4BEBA /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				648D058D2B7B4F5F00489808 /* ExpenseDetail.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				64974D0E2B7A910700B4BEBA /* ExpenseTracker.xcdatamodeld in Sources */,
 				64974D0B2B7A8A8300B4BEBA /* SettingView.swift in Sources */,
 				64974D102B7A91B900B4BEBA /* DataController.swift in Sources */,
+				648D058E2B7B4F5F00489808 /* ExpenseDetail.swift in Sources */,
 				64974D052B7A8A4900B4BEBA /* ExpenseView.swift in Sources */,
 				64974D072B7A8A5700B4BEBA /* AddExpenseView.swift in Sources */,
 			);
